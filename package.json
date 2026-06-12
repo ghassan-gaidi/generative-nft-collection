@@ -1,0 +1,13 @@
+{
+  "name": "generative-nft-collection",
+  "version": "0.1.0",
+  "description": "AI-powered generative NFT collection engine",
+  "private": true,
+  "dependencies": {
+    "@heyputer/puter.js": "^2.0.0"
+  },
+  "scripts": {
+    "gen-traits": "node scripts/generate_traits_node.js",
+    "test": "echo \"Tests coming soon\""
+  }
+}

@@ -1,0 +1,184 @@
+# Player type definitions
+# Each player type has its own set of trait layers with weighted rarity
+
+players:
+  warrior:
+    display_name: "Warrior"
+    description: "Battle-hardened frontline fighters"
+    supply: 3000
+    layers:
+      - background
+      - body
+      - armor
+      - helmet
+      - weapon
+      - accessory
+    trait_pool:
+      background:
+        sky:      { weight: 20, rarity: common }
+        dungeon:  { weight: 20, rarity: common }
+        forest:   { weight: 15, rarity: uncommon }
+        volcano:  { weight: 10, rarity: rare }
+        void:     { weight: 3,  rarity: legendary }
+      body:
+        human_male:    { weight: 30, rarity: common }
+        human_female:  { weight: 25, rarity: common }
+        orc:           { weight: 15, rarity: uncommon }
+        dwarf:         { weight: 10, rarity: uncommon }
+        undead:        { weight: 5,  rarity: rare }
+        angel:         { weight: 2,  rarity: legendary }
+      armor:
+        leather:     { weight: 30, rarity: common }
+        chainmail:   { weight: 25, rarity: uncommon }
+        plate:       { weight: 15, rarity: uncommon }
+        dragonbone:  { weight: 5,  rarity: rare }
+        shadowplate: { weight: 2,  rarity: legendary }
+      helmet:
+        none:        { weight: 25, rarity: common }
+        iron:        { weight: 20, rarity: common }
+        steel:       { weight: 15, rarity: uncommon }
+        horned:      { weight: 10, rarity: rare }
+        dragon:      { weight: 3,  rarity: legendary }
+      weapon:
+        sword:       { weight: 25, rarity: common }
+        axe:         { weight: 20, rarity: uncommon }
+        spear:       { weight: 15, rarity: uncommon }
+        hammer:      { weight: 15, rarity: uncommon }
+        greatsword:  { weight: 8,  rarity: rare }
+        shadowblade: { weight: 2,  rarity: legendary }
+      accessory:
+        none:        { weight: 30, rarity: common }
+        shield:      { weight: 20, rarity: common }
+        cloak:       { weight: 15, rarity: uncommon }
+        amulet:      { weight: 8,  rarity: rare }
+        crown:       { weight: 3,  rarity: legendary }
+
+  mage:
+    display_name: "Mage"
+    description: "Arcane spellcasters wielding ancient magic"
+    supply: 2500
+    layers:
+      - background
+      - body
+      - robe
+      - staff
+      - familiar
+    trait_pool:
+      background:
+        library:    { weight: 25, rarity: common }
+        tower:      { weight: 20, rarity: common }
+        astral:     { weight: 10, rarity: rare }
+        void:       { weight: 5,  rarity: legendary }
+      body:
+        human_male:    { weight: 25, rarity: common }
+        human_female:  { weight: 25, rarity: common }
+        elf:           { weight: 15, rarity: uncommon }
+        undead:        { weight: 8,  rarity: rare }
+        ancient:       { weight: 2,  rarity: legendary }
+      robe:
+        apprentice:     { weight: 30, rarity: common }
+        archmage:       { weight: 20, rarity: uncommon }
+        shadow:         { weight: 10, rarity: rare }
+        voidweaver:     { weight: 5,  rarity: legendary }
+      staff:
+        crystal:   { weight: 25, rarity: common }
+        skull:     { weight: 15, rarity: uncommon }
+        rune:      { weight: 15, rarity: uncommon }
+        bone:      { weight: 8,  rarity: rare }
+        elderwood: { weight: 2,  rarity: legendary }
+      familiar:
+        none:      { weight: 25, rarity: common }
+        owl:       { weight: 20, rarity: common }
+        cat:       { weight: 15, rarity: uncommon }
+        dragon:    { weight: 5,  rarity: rare }
+        phoenix:   { weight: 2,  rarity: legendary }
+
+  cyborg:
+    display_name: "Cyborg"
+    description: "Augmented humans with cybernetic enhancements"
+    supply: 2500
+    layers:
+      - background
+      - body
+      - armor
+      - visor
+      - weapon
+      - augment
+    trait_pool:
+      background:
+        city:       { weight: 25, rarity: common }
+        lab:        { weight: 20, rarity: common }
+        neon:       { weight: 15, rarity: uncommon }
+        wasteland:  { weight: 10, rarity: rare }
+        digital:    { weight: 3,  rarity: legendary }
+      body:
+        chrome:     { weight: 25, rarity: common }
+        steel:      { weight: 20, rarity: common }
+        carbon:     { weight: 15, rarity: uncommon }
+        prototype:  { weight: 8,  rarity: rare }
+        quantum:    { weight: 2,  rarity: legendary }
+      armor:
+        light:      { weight: 30, rarity: common }
+        heavy:      { weight: 20, rarity: uncommon }
+        stealth:    { weight: 10, rarity: rare }
+        hardsuit:   { weight: 3,  rarity: legendary }
+      visor:
+        none:       { weight: 25, rarity: common }
+        red:        { weight: 20, rarity: common }
+        blue:       { weight: 15, rarity: uncommon }
+        gold:       { weight: 5,  rarity: rare }
+        holographic: { weight: 2, rarity: legendary }
+      weapon:
+        pistol:     { weight: 25, rarity: common }
+        rifle:      { weight: 20, rarity: uncommon }
+        blade:      { weight: 15, rarity: uncommon }
+        plasma:     { weight: 8,  rarity: rare }
+        railgun:    { weight: 2,  rarity: legendary }
+      augment:
+        none:       { weight: 30, rarity: common }
+        eye:        { weight: 20, rarity: common }
+        arm:        { weight: 15, rarity: uncommon }
+        spine:      { weight: 8,  rarity: rare }
+        neural:     { weight: 2,  rarity: legendary }
+
+  beast:
+    display_name: "Beast"
+    description: "Mythical creatures and wild monsters"
+    supply: 2000
+    layers:
+      - background
+      - body
+      - wings
+      - element
+      - mark
+    trait_pool:
+      background:
+        forest:     { weight: 25, rarity: common }
+        mountain:   { weight: 20, rarity: common }
+        ocean:      { weight: 15, rarity: uncommon }
+        volcano:    { weight: 10, rarity: rare }
+        cosmos:     { weight: 3,  rarity: legendary }
+      body:
+        wolf:       { weight: 20, rarity: common }
+        bear:       { weight: 20, rarity: common }
+        serpent:    { weight: 15, rarity: uncommon }
+        lion:       { weight: 10, rarity: rare }
+        dragon:     { weight: 3,  rarity: legendary }
+      wings:
+        none:       { weight: 30, rarity: common }
+        bat:        { weight: 20, rarity: uncommon }
+        feather:    { weight: 15, rarity: uncommon }
+        dragon:     { weight: 8,  rarity: rare }
+        ethereal:   { weight: 2,  rarity: legendary }
+      element:
+        none:       { weight: 30, rarity: common }
+        fire:       { weight: 20, rarity: common }
+        ice:        { weight: 15, rarity: uncommon }
+        lightning:  { weight: 8,  rarity: rare }
+        void:       { weight: 2,  rarity: legendary }
+      mark:
+        none:       { weight: 30, rarity: common }
+        scar:       { weight: 20, rarity: common }
+        rune:       { weight: 15, rarity: uncommon }
+        brand:      { weight: 5,  rarity: rare }
+        prophecy:   { weight: 2,  rarity: legendary }
